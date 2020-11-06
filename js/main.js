@@ -1,7 +1,8 @@
 import { fetchData } from "./modules/TheDataMiner.js";
 
 (() => {
-    // this receives the data payload from our AJAX request, parses it (turns the returned JSON object back into a plain JavaScript object) and renders the data to our view (the markup in index.html)
+
+
     function handleDataSet(data) {
         let dishesSection = document.querySelector('.dishes-section'),
             dishesTemplate = document.querySelector('#dishes-template').content;
@@ -12,18 +13,17 @@ import { fetchData } from "./modules/TheDataMiner.js";
             let currentDishes = dishesTemplate.cloneNode(true),
                 currentDishesText = currentDishes.querySelector('.dishes').children;
 
-            currentDishesText[1].src = `images/${data[dishes].photo}.jpg`;
+            currentDishesText[1].src = `images/${data[dishes].photo}`;
             currentDishesText[2].textContent = data[dishes].name;
             currentDishesText[3].textContent = data[dishes].description;
             currentDishesText[4].textContent = data[dishes].recipe;
 
-            // add this new user to the view
             dishesSection.appendChild(currentDishes);
         }
 
         console.log(data);
     }
 
-    fetchData("./DataSet.json").then(data => handleDataSet(data)).catch(err => { console.log(err); });
+    fetchData("./includes/functions.php").then(data => handleDataSet(data)).catch(err => { console.log(err); });
 
 })();
