@@ -1,6 +1,11 @@
 import { fetchData } from "./modules/TheDataMiner.js";
 
 (() => {
+    console.log('loaded');
+    
+    function popErrorWindow(message) {
+        alert("Something has gone horribly, horribly wrong");
+    }
 
 
     function handleDataSet(data) {
