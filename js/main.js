@@ -24,6 +24,6 @@ import { fetchData } from "./modules/TheDataMiner.js";
         console.log(data);
     }
 
-    fetchData("../DataSet.json").then(data => handleDataSet(data)).catch(err => { console.log(err); });
+    fetchData("./DataSet.json").then(data => handleDataSet(data)).catch(err => { console.log(err); });
 
 })();
