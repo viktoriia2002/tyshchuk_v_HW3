@@ -4,12 +4,12 @@
 
     if(isset($_GET["id"])){
        $targetID = $_GET["id"];
-       $result = getSingleUser($pdo, $targetID);
+       $result = getSingleDishes($pdo, $targetID);
 
        return $result;
     } 
         else {
-            $allUsers = getAllUsers($pdo);
+            $allDishes = getAllDishes($pdo);
 
-            return $allUsers;
+            return $allDishes;
     }

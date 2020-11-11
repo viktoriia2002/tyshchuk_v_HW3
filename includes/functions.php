@@ -1,7 +1,7 @@
 <?php 
     $result = array();
 
-    function getAllUsers($conn){
+    function getAllDishes($conn){
 
         $query = "SELECT * FROM dishesData";
 
@@ -13,7 +13,7 @@
 
         echo(json_encode($result[0]));
     }
-    function getSingleUser($conn, $id)
+    function getSingleDishes($conn, $id)
     {
         $query = "SELECT * FROM dishesData WHERE id=" . $id . "";
 
