@@ -7,24 +7,41 @@
     <title>Working with SASS and Modules</title>
 
     <!-- this has to be a css file -->
-    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/masters.css">
+    <link href='https://fonts.googleapis.com/css?family=Goldman' rel='stylesheet'>
 </head>
 
 <body>
+    <h1>My favorite Ukrainian Dishes</h1>
     <main id="app">
-        <h1 class="hidden">Welcome to my awesome app</h1>
-
-
-        <!-- add a users section here -->
+    
+        <div class="text1">
+            <h2 class="left">BORSCH</h2>
+            <h2 class="left">VARENYRY</h2>
+            <h2 class="left">HOLUBTSI</h2>
+            <h2 class="left">BORSCH</h2>
+            <h2 class="left">VARENYRY</h2>
+            <h2 class="left">HOLUBTSI</h2>
+            <h2 class="left">BORSCH</h2>
+        </div>
         <section class="dishes-section">
                 <!-- user-template copies get rendered here -->
         </section>
-        <!-- end users section -->
+        <section class="text2">
+            <h2 class="right">BORSCH</h2>
+            <h2 class="right">VARENYRY</h2>
+            <h2 class="right">HOLUBTSI</h2>
+            <h2 class="right">BORSCH</h2>
+            <h2 class="right">VARENYRY</h2>
+            <h2 class="right">HOLUBTSI</h2>
+            <h2 class="right">BORSCH</h2>
+        </section>
+        
     </main>
 
     <footer></footer>
 
-    <!-- template files here (these don't render - the contents are reusable and get cloned at runtime) -->
+    <!-- template files here s-->
     <template id="dishes-template">
         <div class="dishes">
             <h1 class="hidden"></h1>

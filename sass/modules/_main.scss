@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+background-color:$main-bg-color ;
+font-family: $main-font;
+color: $main-color;
+
+}
+
+.hidden{
+    display: none;
+}
+
+#app{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+
+}
+
+ h1{
+    font-weight: 800 ;
+    font-style: italic;
+    font-size: 68px;
+    text-align: center;
+    padding: 40px;
+}
+
+.dishes-section{
+    display: flex;
+    justify-content: center;
+    display: grid;
+}
+
+.dishes img{
+    width: 450px;
+    height: auto;
+}
+
+.left{
+    transform: rotate(-90deg);
+    font-size: 23px;
+}
+.right{
+    transform: rotate(90deg);
+    font-size: 23px;
+}
+
+.text1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-left: 50px;
+   
+}
+
+
+.text2{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
