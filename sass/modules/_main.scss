@@ -20,7 +20,7 @@ color: $main-color;
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
-
+   
 }
 
  h1{
@@ -44,27 +44,25 @@ color: $main-color;
 
 .left{
     transform: rotate(-90deg);
-    font-size: 23px;
+    font-size: 26px;
 }
 .right{
     transform: rotate(90deg);
-    font-size: 23px;
+    font-size: 26px;
 }
 
 .text1{
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    margin-left: 50px;
-   
+    flex-direction: column;   
 }
 
-
-.text2{
+.ydt{
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-right: 50px;
+    flex-direction: row;
+    justify-content: center;
 }
+
+
+
 
