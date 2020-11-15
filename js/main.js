@@ -8,20 +8,30 @@ import { fetchData } from "./modules/TheDataMiner.js";
     }
 
 
-
     function handleDataSet(data) {
         //here will be a lightbox with this data
-        //let lightBox = document.querySelector(".lightbox");
-        let dishesSection = document.querySelector('.dishes-section'),
-            dishesTemplate = document.querySelector('#dishes-template').content;
+        //let dishesSection = document.querySelector('.dishes-section'),
+        //dishesTemplate = document.querySelector('#dishes-template').content;
+        //here will be a lightbox with this data
+    //     let lightboxSection = document.querySelector('.lightbox-section'),
+    //         lightboxTemplate = document.querySelector('#lightbox-template').content;
+        
+    //     for (let lightbox in data) {
+    //         let lightboxDishes = lightboxTemplate.cloneNode(true),
+    //             lightboxDishesText = lightboxDishes.querySelector('.lightbox').children;
 
-        // loop through the JavaScript object and for each user, make a copy of the user template we find at the bottom of index.html, populate it with the user's data, and put that fresh copy in the users section in index.html
+    //         lightboxDishesText[2].textContent = data[lightbox].name;
+    //         lightboxDishesText[3].textContent = data[lightbox].description;
+    //         lightboxDishesText[4].textContent = data[lightbox].recipe;
+    //         lightboxSection.appendChild(lightboxDishes);
+    // }
+    // lightboxSection.addEventListener("click", retrieveProjectInfo);
+
 
         for (let dishes in data) {
             let currentDishes = dishesTemplate.cloneNode(true),
                 currentDishesText = currentDishes.querySelector('.dishes').children;
 
-            currentDishesText[1].src = `images/${data[dishes].photo}`;
             currentDishesText[2].textContent = data[dishes].name;
             currentDishesText[3].textContent = data[dishes].description;
             currentDishesText[4].textContent = data[dishes].recipe;
