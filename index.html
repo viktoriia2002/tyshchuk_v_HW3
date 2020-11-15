@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with SASS and Modules</title>
+
+    <!-- this has to be a css file -->
+    <link rel="stylesheet" href="css/masters.css">
+    <link href='https://fonts.googleapis.com/css?family=Goldman' rel='stylesheet'>
+</head>
+
+<body>
+    <h1>My favorite Ukrainian Dishes</h1>
+     <!-- <div class="yummy"><p>YUMMYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY</p></div> -->
+        <div class="ydt">
+        <img class="yummy"src="images/yummy_.svg" width = "900" alt=" YDT ">
+        <img class="yummy"src="images/yummy_.svg" width = "900" alt=" YDT ">
+    </div>
+    
+    <main id="app">
+    
+        <div class="text1">
+            <h2 class="left">BORSCH</h2>
+            <h2 class="left">VARENYRY</h2>
+            <h2 class="left">HOLUBTSI</h2>
+            <h2 class="left">BORSCH</h2>
+            <h2 class="left">VARENYRY</h2>
+            <h2 class="left">HOLUBTSI</h2>
+            <h2 class="left">BORSCH</h2>
+        </div>
+        <section class="dishes-section">
+                <!-- user-template copies get rendered here -->
+        </section>
+        <section class="lightbox-section">
+            <!-- user-template copies get rendered here -->
+    </section>
+        <div class="text1">
+            <h2 class="left">BORSCH</h2>
+            <h2 class="left">VARENYRY</h2>
+            <h2 class="left">HOLUBTSI</h2>
+            <h2 class="left">BORSCH</h2>
+            <h2 class="left">VARENYRY</h2>
+            <h2 class="left">HOLUBTSI</h2>
+            <h2 class="left">BORSCH</h2>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="ydt">
+            <img class="yummy"src="images/yummy_.svg" width = "900" alt=" YDT ">
+            <img class="yummy"src="images/yummy_.svg" width = "900" alt=" YDT ">
+        </div>
+    </footer>
+
+    <!-- template files here s-->
+    <template id="dishes-template">
+        <div class="dishes">
+            <h1 class="hidden"></h1>
+            <img src="" alt="dishes img">
+             <h2 class="dishes-name"></h2>
+            <p class="dishes-description"></p>
+            <p class="dishes-recipe"></p> 
+        </div>
+    </template>
+    <!-- <template id="lightbox-template">
+        <div class="lightbox">
+            <h2 class="lightbox-name"></h2>
+        </div>
+    </template> -->
+    <!-- end templates -->
+
+    <!-- script files always go here -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
