@@ -1,12 +1,11 @@
-# My Favorite Ukranian Dishes
-There is one mobile first page where you can find some information about my favorite ukrainian food and how to cook it ay home.
+# My Favorite Ukrainian Dishes
+There is one mobile first page where you can find some information about my favorite ukrainian food and how to cook it at home.
 
 ## Description
 Pick 3 things you love and create an app that showcases those things. Design a database that contains at least 4 columns - you must include an image of some kind and descriptive data about each of those things. Use the class authoring files as a reference - however DO NOT use the design files - make something better.
 
 ## Installation
 No particular installation required. Download repo and open in a code editor. Content will require a Live Server to view properly.
-
 
 ## Contributing
 Fork it!
